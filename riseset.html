@@ -514,8 +514,8 @@ var losgn=1;
 var lasgn=1;
 if(ct[cp][1]<0){losgn=-1;}
 if(ct[cp][3]<0){lasgn=-1;}
-var glong=ct[cp][1]+losgn*ct[cp][2]/60;
-var glat=ct[cp][3]+lasgn*ct[cp][4]/60;
+var glong=ct[cp][1]-0+losgn*ct[cp][2]/60;
+var glat=ct[cp][3]-0+lasgn*ct[cp][4]/60;
 
 
 var hmabove=new Array,arise=new Array,aset=new Array,hmrise=new Array,hmset=new Array;
