@@ -507,7 +507,7 @@ var ilat=lat.toFixed(0);
 var ilng=lng.toFixed(0);
 var dlat=Math.abs(lat-ilat)*60;
 var dlng=Math.abs(lng-ilng)*60;
-ct[cp]=new Array(tz,ilng,dlng,ilat,dlat);
+ct[cp]=new Array(tz,ilng,dlng.toFixed(0),ilat,dlat.toFixed(0));
 	
 var zone=ct[cp][0];
 var losgn=1;
