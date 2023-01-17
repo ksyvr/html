@@ -1,21 +1,25 @@
 <html><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>計算指定日期世界主要城市月亮與太陽升起落下的大約時間</title>
+<title>計算指定日期 月亮與太陽升起落下的大約時間</title>
 </head>
 <body>
-<p style="font-size:12pt"><b>計算指定日期世界主要城市月亮與太陽升起落下的大約時間<font color="#AA0000">(未作日光節約時間之調整)</font></b></p><font color="#AA0000">
+<!--p style="font-size:12pt"><b>計算指定日期世界主要城市月亮與太陽升起落下的大約時間<font color="#AA0000">(未作日光節約時間之調整)</font></b></p><font color="#AA0000"-->
 <p style="font-size:9pt"><font color="#000000">請輸入陽曆日期並選擇城市<br></font></p><font color="#000000">
 
-<b>陽曆:</b><input id="in1" type="text" size="3" value="2022">年
-<input id="in2" type="text" size="1" value="8">月
-<input id="in3" type="text" size="1" value="24">日
+<b>陽曆:</b>
+<input id="in1" type="text" size="4" value="2022">年
+<input id="in2" type="text" size="2" value="8">月
+<input id="in3" type="text" size="2" value="24">日
+緯度：<input id="in4" type="text" size="10" value="22.3193">
+經度：<input id="in5" type="text" size="10" value="114.1694">
+時差：<input id="in6" type="text" size="2" value="8">
 
-<form name="sites">
+<!--form name="sites">
 <select name="class1" onchange="select()" style="width:130">
 <option value="0" selected="selected">台灣</option><option value="1">大陸</option><option value="2">香港</option><option value="3">澳門</option><option value="4">外蒙古</option><option value="5">美國</option><option value="6">加拿大</option><option value="7">朝鮮</option><option value="8">韓國</option><option value="9">日本</option><option value="10">菲律賓</option><option value="11">馬來西亞</option><option value="12">印尼</option><option value="13">新加坡</option><option value="14">東帝汶</option><option value="15">汶萊</option><option value="16">越南</option><option value="17">柬埔寨</option><option value="18">寮國</option><option value="19">緬甸</option><option value="20">泰國</option><option value="21">尼泊爾</option><option value="22">錫金</option><option value="23">不丹</option><option value="24">孟加拉</option><option value="25">印度</option><option value="26">斯里蘭卡</option><option value="27">馬爾代夫</option><option value="28">哈薩克</option><option value="29">吉爾吉斯</option><option value="30">巴基斯坦</option><option value="31">烏茲別克</option><option value="32">阿富汗</option><option value="33">塔吉克</option><option value="34">土庫曼</option><option value="35">阿曼</option><option value="36">阿聯酋</option><option value="37">卡塔爾</option><option value="38">巴林</option><option value="39">伊朗</option><option value="40">亞塞拜然</option><option value="41">科威特</option><option value="42">亞美尼亞</option><option value="43">沙烏地阿拉伯</option><option value="44">葉門</option><option value="45">伊拉克</option><option value="46">敘利亞</option><option value="47">黎巴嫩</option><option value="48">約旦</option><option value="49">以色列及巴勒斯坦</option><option value="50">塞浦路斯</option><option value="51">土耳其</option><option value="52">羅馬尼亞</option><option value="53">保加利亞</option><option value="54">希臘</option><option value="55">馬其頓</option><option value="56">波蘭</option><option value="57">南斯拉夫</option><option value="58">阿爾巴尼亞</option><option value="59">匈牙利</option><option value="60">斯洛伐克</option><option value="61">捷克</option><option value="62">克羅地亞</option><option value="63">斯洛文尼亞</option><option value="64">馬爾他</option><option value="65">奧地利</option><option value="66">德國</option><option value="67">丹麥</option><option value="68">挪威</option><option value="69">瑞典</option><option value="70">芬蘭</option><option value="71">瑞士</option><option value="72">荷蘭</option><option value="73">比利時</option><option value="74">盧森堡</option><option value="75">英國</option><option value="76">愛爾蘭</option><option value="77">法國</option><option value="78">西班牙</option><option value="79">葡萄牙</option><option value="80">意大利</option><option value="81">梵蒂岡</option><option value="82">冰島</option><option value="83">古巴</option><option value="84">巴哈馬</option><option value="85">牙買加</option><option value="86">海地</option><option value="87">墨西哥</option><option value="88">危地馬拉</option><option value="89">伯利茲</option><option value="90">薩爾瓦多</option><option value="91">洪都拉斯</option><option value="92">尼加拉瓜</option><option value="93">哥斯達黎加</option><option value="94">巴拿馬</option><option value="95">厄瓜多爾</option><option value="96">哥倫比亞</option><option value="97">秘魯</option><option value="98">智利</option><option value="99">多米尼加</option><option value="100">委內瑞拉</option><option value="101">玻利維亞</option><option value="102">多米尼克國</option><option value="103">阿根廷</option><option value="104">圭亞那</option><option value="105">巴拉圭</option><option value="106">烏拉圭</option><option value="107">蘇裏南</option><option value="108">巴西</option><option value="109">埃及</option><option value="110">蘇丹</option><option value="111">索馬裏</option><option value="112">坦桑尼亞</option><option value="113">烏幹達</option><option value="114">中非</option><option value="115">查德</option><option value="116">利比亞</option><option value="117">喀麥隆</option><option value="118">突尼斯</option><option value="119">加蓬</option><option value="120">赤道幾內亞</option><option value="121">阿爾及利亞</option><option value="122">摩洛哥</option><option value="123">西撒哈拉</option><option value="124">茅利塔尼亞</option><option value="125">塞內加爾</option><option value="126">岡比亞</option><option value="127">馬裏</option><option value="128">象牙海岸</option><option value="129">加納</option><option value="130">肯雅</option><option value="131">馬拉維</option><option value="132">莫三比克</option><option value="133">辛巴威</option><option value="134">盧旺達</option><option value="135">尚比亞</option><option value="136">薩伊</option><option value="137">剛果</option><option value="138">安哥拉</option><option value="139">南非</option><option value="140">馬達加斯加</option><option value="141">紐西蘭</option><option value="142">澳大利亞</option><option value="143">巴布亞新幾內亞</option><option value="144">所羅門群島</option><option value="145">斐濟</option><option value="146">俄羅斯</option><option value="147">白俄羅斯</option><option value="148">烏克蘭</option><option value="149">莫爾達瓦</option><option value="150">立陶宛</option><option value="151">愛沙尼亞</option></select>
 <select name="class2" style="width:120">
 <option value="0" selected="selected">台北市</option><option value="1">高雄市</option><option value="2">基隆市</option><option value="3">新竹市</option><option value="4">台中市</option><option value="5">台南市</option><option value="6">台北縣</option><option value="7">宜蘭縣市</option><option value="8">桃園縣市</option><option value="9">新竹縣</option><option value="10">苗栗縣市</option><option value="11">台中縣</option><option value="12">彰化縣市</option><option value="13">南投縣市</option><option value="14">雲林縣</option><option value="15">嘉義縣市</option><option value="16">台南縣</option><option value="17">高雄縣</option><option value="18">屏東縣市</option><option value="19">花蓮縣市</option><option value="20">台東縣市</option><option value="21">綠島</option><option value="22">蘭嶼</option><option value="23">澎湖縣</option><option value="24">東引島</option><option value="25">馬祖</option><option value="26">金門</option></select>
-</form>
+</form-->
 
 <input type="button" onclick="RiseSet()" value="計算"><br>
 <textarea rows="12" cols="80" id="show1"></textarea>
@@ -25,9 +29,15 @@ var today=new Date();
 yr=today.getFullYear();
 mh=today.getMonth()+1;
 dy=today.getDate();
+lat=22.3193
+lng=114.1694
+tz=8
 document.getElementById("in1").value=yr;
 document.getElementById("in2").value=mh;
 document.getElementById("in3").value=dy;
+document.getElementById("in4").value=lat;
+document.getElementById("in5").value=lng;
+document.getElementById("in6").value=tz;
 
 var synmonth = 29.530588853;     //synodic month (new Moon to new Moon)
 
@@ -482,12 +492,23 @@ var d=in3.value-0;	//取得日之輸入值
 //var zone=in4.value-0;	//取得時差之輸入值
 //var glong=in5.value-0;	//取得經度之輸入值
 //var glat=in6.value-0;	//取得緯度之輸入值
-
+	
+var lat=in4.value-0;
+var lng=in5.value-0;
+var tz=in6.value-0;
+	
 //var zone=tz[myform1.city.value];
 //var glong=lg[myform1.city.value];
 //var glat=lt[myform1.city.value];
 var cp=0;
-cp=k+Number(sites.class2.value);
+//cp=k+Number(sites.class2.value);
+
+var ilat=lat.toFixed(0);
+var ilng=lng.toFixed(0);
+var dlat=lat-ilat;
+var dlng=lng-dlng;
+ct[cp]=new Array(tz,ilng,dlng,ilat,dlat);
+	
 var zone=ct[cp][0];
 var losgn=1;
 var lasgn=1;
@@ -495,6 +516,7 @@ if(ct[cp][1]<0){losgn=-1;}
 if(ct[cp][3]<0){lasgn=-1;}
 var glong=ct[cp][1]+losgn*ct[cp][2]/60;
 var glat=ct[cp][3]+lasgn*ct[cp][4]/60;
+
 
 var hmabove=new Array,arise=new Array,aset=new Array,hmrise=new Array,hmset=new Array;
 var flag=0;
@@ -906,6 +928,6 @@ function initial_select()
 
 </script>
 <hr>
-<center><p><font size="4" face="arial" color="blue"><a href="../index_files/inright.html">回上頁</a></font></p></center><font size="4" face="arial" color="blue"><a href="../index_files/inright.html">
+<!-- <center><p><font size="4" face="arial" color="blue"><a href="../index_files/inright.html">回上頁</a></font></p></center><font size="4" face="arial" color="blue"><a href="../index_files/inright.html"> -->
 
 </a></font></font></font></body></html>
