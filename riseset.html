@@ -539,7 +539,7 @@ zone = zone / 24;
 var jdx = Jdays(op, y, m, d, 12); //求出指定年月日之JD值
 var thedate = jdx - 2400001 - zone;  //儒略日,減去2400001再減去8小時時差
 risenset(glong, glat, thedate, hmabove, arise, aset, hmrise, hmset);
-var out=ct[cp].toString()+'\r\n';
+var out='';	//ct[cp].toString()+'\r\n';
 out+="時區:";
 out=out+ct[cp][0]+",   經度:";
 if(ct[cp][1]>0){out=out+"東經";}else{out=out+"西經";}
